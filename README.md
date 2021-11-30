@@ -1,5 +1,5 @@
-# 介绍
-本项目为DevSpore项目组spring-boot-huawei工程，旨在简化基于spring-boot的项目开发时，对于开发环境依赖jar包的管理问题。
+﻿# 介绍
+本项目旨在简化基于spring-boot的项目开发时，对于开发环境依赖jar包的管理问题。
 
 ## 如何使用
 ### 基本结构说明
