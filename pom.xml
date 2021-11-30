@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Licensed to the Apache Software Foundation (ASF) under one or more
   ~ contributor license agreements.  See the NOTICE file distributed with
@@ -36,11 +36,7 @@
     <modules>
         <module>spring-boot-huawei-parent</module>
         <module>spring-boot-starter-huawei</module>
-        <module>spring-boot-starter-devspore</module>
-        <module>spring-boot-huawei-samples</module>
-        <module>spring-boot-huawei-docs</module>
         <module>spring-boot-huawei-dependencies</module>
-        <module>spring-boot-starter-huawei-component</module>
     </modules>
 
     <!-- jar包上传仓库配置-->
