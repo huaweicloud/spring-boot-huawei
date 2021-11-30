@@ -16,7 +16,7 @@
   ~ limitations under the License.
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.huaweicloud.devspore</groupId>
@@ -39,11 +39,54 @@
         <module>spring-boot-huawei-dependencies</module>
     </modules>
 
-    <!-- jar包上传仓库配置-->
     <scm>
-        <developerConnection>scm:git:https://git.huawei.com/camp/coral/spring-boot-huawei.git</developerConnection>
+        <url>https://github.com/huaweicloud/spring-boot-huawei</url>
+        <connection>scm:git:git://github.com/huaweicloud/spring-boot-huawei.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/huaweicloud/spring-boot-huawei.git
+        </developerConnection>
         <tag>HEAD</tag>
     </scm>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.5</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>oss</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>oss</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+        <profile>
+            <id>it</id>
+            <modules>
+                <module>integration-tests</module>
+                <module>coverage-reports</module>
+            </modules>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
