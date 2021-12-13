@@ -33,5 +33,3 @@ spring-boot-huawei
 
 其他模块参见各模块的文档说明.  
 #### 注: 当前各功能模块使用的spring-boot版本为2.5.4，请不要使用过低的spring-boot版本(spring boot 2.0以上)
-
-## ChangeLog:
