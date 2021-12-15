@@ -79,13 +79,6 @@
                 </repository>
             </distributionManagement>
         </profile>
-        <profile>
-            <id>it</id>
-            <modules>
-                <module>integration-tests</module>
-                <module>coverage-reports</module>
-            </modules>
-        </profile>
     </profiles>
 
     <build>
