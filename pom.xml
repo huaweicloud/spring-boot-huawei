@@ -25,8 +25,12 @@
 
     <packaging>pom</packaging>
 
+    <name>spring-boot-huawei</name>
+    <url>https://github.com/huaweicloud/spring-boot-huawei</url>
+    <description>spring-boot-huawei</description>
+
     <properties>
-        <revision>0.2.5-SNAPSHOT</revision>
+        <revision>0.2.5-RELEASE</revision>
         <maven.source.plugin.version>3.0.0</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
@@ -59,6 +63,20 @@
     </distributionManagement>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -144,6 +162,28 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+        <developer>
+            <name>Zhu Jun</name>
+            <id>zhujun</id>
+            <email>zhujunxxxxx@163.com</email>
+            <timezone>+8:00</timezone>
+            <organization>huawei</organization>
+            <roles>
+                <role>Java Developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Xiao Weimin</name>
+            <id>xiaoweimin</id>
+            <email>xiaoweimin@huawei.com</email>
+            <timezone>+8:00</timezone>
+            <organization>huawei</organization>
+            <roles>
+                <role>Java Developer</role>
+            </roles>
+        </developer>
+    </developers>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
