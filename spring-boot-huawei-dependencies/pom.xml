@@ -30,7 +30,7 @@
 
     <properties>
         <!-- spring-boot -->
-        <springboot.version>2.5.4</springboot.version>
+        <springboot.version>2.5.6</springboot.version>
         <!-- DevSpore -->
         <devspore.component.version>1.0.5-beta</devspore.component.version>
         <devspore.auth.version>3.0.3</devspore.auth.version>
