@@ -1,6 +1,6 @@
 [![Build Status](https://github.com/huaweicloud/spring-boot-huawei/actions/workflows/maven.yml/badge.svg)](https://github.com/huaweicloud/spring-boot-huawei/actions/workflows/maven.yml)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.huaweicloud/spring-boot-huawei/badge.svg)](https://search.maven.org/search?q=g:com.huaweicloud.devspore%20AND%20a:spring-boot-huawei-dependencies) 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.huaweicloud/spring-boot-huawei/badge.svg)](https://search.maven.org/search?q=g:com.huaweicloud.devspore%20AND%20a:spring-boot-huawei) 
 
 # 介绍
 本项目旨在简化基于spring-boot的项目开发时，对于开发环境依赖jar包的管理问题。
