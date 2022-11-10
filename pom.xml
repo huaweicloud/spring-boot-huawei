@@ -30,7 +30,7 @@
     <description>spring-boot-huawei</description>
 
     <properties>
-        <revision>0.4.8-RELEASE</revision>
+        <revision>0.4.9-RELEASE</revision>
         <maven.source.plugin.version>3.0.0</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>

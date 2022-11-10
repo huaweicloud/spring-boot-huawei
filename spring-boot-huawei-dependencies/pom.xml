@@ -32,11 +32,11 @@
         <!-- spring -->
         <spring.version>5.3.23</spring.version>
         <!-- spring-boot -->
-        <springboot.version>2.7.4</springboot.version>
+        <springboot.version>2.7.5</springboot.version>
         <!-- DevSpore -->
         <devspore.component.version>1.1.23-RELEASE</devspore.component.version>
         <devspore.auth.version>3.3.2</devspore.auth.version>
-        <devspore.security.version>1.3.1</devspore.security.version>
+        <devspore.security.version>1.3.4</devspore.security.version>
         <devspore.deploy.version>1.0.5-SNAPSHOT</devspore.deploy.version>
         <devspore.probe.version>0.1.5-RELEASE</devspore.probe.version>
         <!-- DevCloud -->
@@ -88,6 +88,7 @@
         <mybatis-spring-boot-starter.version>2.2.2</mybatis-spring-boot-starter.version>
 
         <jakarta.annotation-api.version>2.0.0</jakarta.annotation-api.version>
+        <spring-security-version>5.7.5</spring-security-version>
     </properties>
 
     <dependencyManagement>
@@ -97,6 +98,13 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-framework-bom</artifactId>
                 <version>${spring.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-bom</artifactId>
+                <version>${spring-security-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
